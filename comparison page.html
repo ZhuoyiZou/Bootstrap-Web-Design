@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Components</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<style>
+    [class*="col-"] {
+    padding: 15px;
+    margin-left: 15px
+  }
+  
+    img{
+      height:auto
+    }
+</style>
+
+<body style="background-color:lightgray">
+    <!--Create a nav bar-->
+  <nav class="navbar navbar-default">
+    <!--Creater a brand for the web and adjust the setting for the collapse web-->
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" style="background-color:green; color:white; margin-left: 60px" href="home page.html">Latitude</a>
+        </div>
+      <!-- Collect the nav buttons -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right" style="margin-right: 20px">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="max_temp.html" target="_self">Max Temperature</a></li>
+              <li><a href="humidity.html" target="_self">Humidity</a></li>
+              <li><a href="cloud.html" target="_self">Cloudiness</a></li>
+              <li><a href="wind.html" target="_self">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li><a href="comparison page.html">Comparison</a></li>
+          <li><a href="data.html">Data</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-lg-10" style="background-color: white; box-align: center">
+
+            <div class="page-header">
+                <h1 style="color:green; font-size: 30px; margin-left: 15px">Comparison: Latitude vs X</h1>
+            </div>
+
+            <p1>Click any plot to get an in-depth analysis.</p1>
+
+            <br>
+
+            <div class="col-xs-12 col-lg-5" style="box-align: center">
+              <h1 style="color:green; font-size:16px; text-align:center">vs.Max Temperature</h1>
+              
+              <a href="max_temp.html">
+                <img width="400" height="400" src="./Image/lat vs max_temp.png">
+              </a>
+
+              <h1 style="color:green; font-size:16px; text-align:center">vs. Cloudiness</h1>
+              
+              <a href="cloud.html">
+              <img width="400" height="400" src="./Image/lat vs cloud.png">
+              </a>
+              
+            </div>
+
+            <div class="col-xs-12 col-lg-5" style="box-align: center">
+              <h1 style="color:green; font-size:16px; text-align:center">vs. Humidity</h1>
+              
+              <a href="humidity.html">
+              <img width="400" height="400" src="./Image/lat vs hum.png">
+              </a>
+
+              <h1 style="color:green; font-size:16px; text-align:center">vs. Wind Speed</h1>
+
+              <a href="wind.html">
+              <img width="400" height="400" src="./Image/lat vs wind.png">
+              </a>
+            </div>
+         </div>
+    </div>
+  </div>
+    
+</body>
+</html>
